@@ -8,11 +8,7 @@ void Heap(unsigned long *v, long root, long bottom, unsigned long *mov, unsigned
 
   	unsigned long done, maxChild, temp;
 
-
-
   	done = 0;
-
-
 
 	//primeira comparação do while, comp++
 

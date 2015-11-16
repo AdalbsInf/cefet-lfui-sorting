@@ -21,11 +21,8 @@ long Particao(unsigned long *v, long p, long r, unsigned long *mov, unsigned lon
 
 
    	while (1) {
-
-
-  		//(v[i] <= c)
-      	(*comp)++;
-
+            //(v[i] <= c)
+            (*comp)++;
        	while (i <= r && v[i] <= c)
        	{
        		//(v[i] <= c)
@@ -33,8 +30,6 @@ long Particao(unsigned long *v, long p, long r, unsigned long *mov, unsigned lon
 	       	++i;
 
     	}
-
-
 		//(c < v[j])
 		(*comp)++;
 
@@ -64,12 +59,6 @@ long Particao(unsigned long *v, long p, long r, unsigned long *mov, unsigned lon
 
    	return j;
 }
-
-
-
-
-
-
 // A função rearranja o vetor v[p..r], com p <= r+1,
 // de modo que ele fique em ordem crescente.
 

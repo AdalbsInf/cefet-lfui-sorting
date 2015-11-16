@@ -5,7 +5,7 @@ void Insercao(unsigned long *v, unsigned long n, unsigned long *mov, unsigned lo
 
 {
 
-     long i, j, value;
+    unsigned long i, j, value;
 
 
 

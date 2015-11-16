@@ -1,9 +1,6 @@
 #include <stdlib.h>
-
 #include <stdio.h>
-
 #include <time.h>
-
 #include "ordenacao.h"
 
 
@@ -16,39 +13,20 @@
 void GerarVetorAleatorio(unsigned long *v, unsigned long n)
 
 {
-
 	unsigned long i;
-
-
-
 
     for(i = 0; i < n; i++) {
 
         v[i] = (rand() % n);
-
     }
 }
 
-
-
-
-
 Estatisticas Ordenar(unsigned long *v, unsigned long n)
-
 {
-
-
-
-	Estatisticas estatisticas;
-
-
-
+    Estatisticas estatisticas;
 	estatisticas.movimentacoes = 0;
 	estatisticas.comparacoes = 0;
-
-
-
-	clock_t tempo1, tempo2;
+    clock_t tempo1, tempo2;
 
 
 	tempo1 = clock();
@@ -61,26 +39,10 @@ Estatisticas Ordenar(unsigned long *v, unsigned long n)
 
 	// pode ser: Selecao, Insercao, QuickSort ou HeapSort
     void (*algoritmoEscolhido)(unsigned long *, unsigned long, unsigned long *, unsigned long *) = Selecao;
-
     algoritmoEscolhido(v, n, &estatisticas.movimentacoes, &estatisticas.comparacoes);
-
-
-
-
 	tempo2 = clock();
-
-
-
 	estatisticas.tempo =  (double)(tempo2 - tempo1) / CLOCKS_PER_SEC;
-
-
-
-
-
 	return estatisticas;
-
-
-
 }
 
 
@@ -115,30 +77,11 @@ int main(int argc, char **argv)
 
     Estatisticas estatisticas = Ordenar(v, tamanho);
 
-
-
-
-
-
     //Depois da ordenação
-
-
     printf("| Resultados:                                        |\n");
-
-
-
     printf("   Tempo gasto (em seg.): %f                         \n", estatisticas.tempo);
-
-
-
     printf("   Movimentacoes: %lu                                \n", estatisticas.movimentacoes);
-
-
-
     printf("   Comparacoes: %lu                                  \n", estatisticas.comparacoes);
-
-
-
     printf("|                                                    |\n\n\n");
 
 
