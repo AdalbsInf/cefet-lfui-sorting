@@ -34,7 +34,7 @@
 1447458394 source:c:\users\flavio\documents\github\cefet-lfui-sorting\selecao.cpp
 	"ordenacao.h"
 
-1447694044 source:c:\users\aluno\documents\github\cefet-lfui-sorting\main.cpp
+1447694733 source:c:\users\aluno\documents\github\cefet-lfui-sorting\main.cpp
 	<stdlib.h>
 	<stdio.h>
 	<time.h>
@@ -45,7 +45,7 @@
 1447694044 source:c:\users\aluno\documents\github\cefet-lfui-sorting\heapsort.cpp
 	"ordenacao.h"
 
-1447693576 source:c:\users\aluno\documents\github\cefet-lfui-sorting\quicksort.cpp
+1447694120 source:c:\users\aluno\documents\github\cefet-lfui-sorting\quicksort.cpp
 	"ordenacao.h"
 
 1447693576 source:c:\users\aluno\documents\github\cefet-lfui-sorting\selecao.cpp
